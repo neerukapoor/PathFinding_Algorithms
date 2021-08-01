@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body onload="setup()">
+    <div class='container'>
+        <button class="modal-btn">About</button>
+        <div id='maze_container' class='maze_container'></div>
+        <div class='buttons'>
+            <div class='algo'>
+                <button class="start-button" onclick="bfs()">BFS</button>
+                <button class="start-button" onclick="dfs()">DFS</button>
+                <!-- </div> -->
+                <!-- <div class='algo1'> -->
+                <button class="start-button" onclick="bdbfs()">Bidirection BFS</button>
+                <button class="start-button" onclick="BestFS()">Best First Search</button>
+            </div>
+            <div class='reset'>
+                <button class="start-button" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <div class='modal-bg'>
+        <div class="modal">
+            <div class='info'>
+                <p>Click on the nodes where you want to create wall and select one of the given algorithms.</p>
+                <img src="image.png" width="250" height="250" alt="image">
+
+                <h3>Graph traversal</h3>
+                <p>Graph traversal means visiting every vertex
+                    and edge exactly once in a well-defined order. While using certain graph algorithms,
+                    you must ensure that each vertex of the graph is visited exactly once.
+                    The order in which the vertices are visited are important and may depend upon the algorithm.
+                </p>
+                <h3>Breadth First Search (BFS)</h3>
+                <p>
+                    BFS is a graph search algorithm which find smallest path form source to goal vertex, where you should start traversing from a selected node (source or starting node) 
+                    and traverse the graph layerwise thus exploring the neighbour nodes (nodes which are directly connected to source node). 
+                    You must then move towards the next-level neighbour nodes. Breadth First Search Algorithm finds smallest path.
+                </p>
+                <h3>Depth First Search (DFS)</h3>
+                <p>
+                    The DFS algorithm is a recursive algorithm that uses the idea of backtracking. It
+                     involves exhaustive searches of all the nodes by going ahead, if possible, else by backtracking. It does not guarantee shortest path.
+                </p>
+                <h3>Bidirectional BFSearch</h3>
+                <p>
+                    Bidirectional search is a graph search algorithm which find smallest path form source to goal vertex. 
+                    It runs two simultaneous search – 
+                    <p>
+                    1.Forward search form source/initial vertex toward goal vertex<br>
+                    2.Backward search form goal/target vertex toward source vertex
+                    <br><br>Bidirectional search replaces single search graph(which is likely to grow exponentially) with two smaller sub graphs – 
+                    one starting from initial vertex and other starting from goal vertex. The search terminates when two graphs intersect.
+                    </p>
+                </p>
+                <h3>Best First Search</h3>
+                <p>
+                    In BFS and DFS, when we are at a node, we can consider any of the adjacent as next node. 
+                    So both BFS and DFS blindly explore paths without considering any cost function. The idea of Best First Search is 
+                    to use an evaluation function to decide which adjacent is most promising and then explore. 
+                    Best First Search falls under the category of Heuristic Search or Informed Search. It does not guarantee shortest path.
+                </p>
+                <div class="links-class">
+                <a class="links" href="https://github.com/neerukapoor" target="_blank">Github</a>
+                <a class="links" href="https://www.linkedin.com/in/neerukapoor/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <span class="modal-closs">X</span>
+        </div>
+    </div>
+    <div class="links-class">
+        <a class="links" href="https://github.com/neerukapoor" target="_blank">Github</a>
+        <a class="links" href="https://www.linkedin.com/in/neerukapoor/" target="_blank">LinkedIn</a>
+    </div>
+
+</body>
+
+</html>

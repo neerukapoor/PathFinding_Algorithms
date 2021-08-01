@@ -1,0 +1,168 @@
+body {
+  background: mintcream;
+}
+
+.container {
+  /* box-shadow: 10px 5px 5px black; */
+}
+
+.maze_container {
+  height: 60%;
+  width: 45%;
+  margin: auto;
+  /* box-shadow: 3px 3px 50px black; */
+}
+
+.row {
+  height: 10%;
+  display: flex;
+}
+
+.node {
+  background-color: rgb(8, 11, 12);
+  width: 100%;
+  height: 100%;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-right: 1px;
+  border-left: 1px;
+  border-style: solid;
+  border-color: gray;
+  transition: 0.25s transform;
+  border-radius: 4px;
+  margin: 1px;
+}
+
+.node1 {
+  background-color: rgb(48 164 226);
+  transform: scale(1.05);
+}
+
+.node100 {
+  background-color: rgb(78 150 218);
+  transform: scale(1.05);
+}
+
+.node:hover {
+  transform: scale(1.1);
+  background-color: rgb(48, 218, 248);
+}
+.row {
+  margin: 2px;
+}
+
+.start-button {
+  color: black;
+  font-size: 14px;
+  height: 41px;
+  margin: 6px 5px 0px 5px;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.modal-btn {
+  color: black;
+  font-size: 14px;
+  height: 41px;
+  margin: 0px 6px 3px;
+  background-color: unset;
+  margin-left: 36px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  flex-direction: column;
+}
+
+.algo {
+  justify-content: center;
+  display: flex;
+}
+
+.algo1 {
+  justify-content: center;
+  display: flex;
+}
+
+.reset {
+  justify-content: center;
+  display: flex;
+  margin: 12px 0px 0px 12px;
+}
+
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  position: relative;
+  background-color: white;
+  width: 80%;
+  height: 70%;
+  overflow: auto;
+  /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+.modal-closs {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.info {
+  margin: 25px 10px 10px 12px;
+}
+
+.links {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 5px 0px 5px;
+}
+
+.links-class {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background: royalblue;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 34%);
+  transition: 0.5s background, 0.2s transform;
+}
+
+.btn:hover {
+  background: rgb(126, 156, 245);
+}
+.btn:active {
+  transform: scale(0.95);
+}
